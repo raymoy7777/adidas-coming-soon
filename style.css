@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  
+  html, body {
+    min-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-family: AdiHaus;
+  }
+  
+  body {
+    background: url('https://assets.codepen.io/6060109/waves.png');
+    background-size: cover;
+  }
+  
+  #all-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #logo {
+    margin: 18px auto;
+    display: block;
+  }
+  
+  #athlete-mobile {
+    height: 250px;
+    background: url('https://assets.codepen.io/6060109/mobile-shoes.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  #all-content-container {
+    padding: 30px 32px;
+  }
+  
+  #text-container {
+    width: 100%;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  h2:nth-of-type(1) {
+    font-weight: normal;
+    color: #2F80ED;
+    margin-bottom: 10px;
+  }
+  
+  h2:nth-of-type(2) {
+    color: #423A3A;
+  }
+  
+  p {
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 28px;
+    color: #333333;
+  }
+  
+  form {
+    margin-top: 30px;
+    margin-bottom: 49px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  input[type = "email"] {
+    width: 79%;
+    height: 48px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    padding: 0px 7.7%;
+  }
+  
+  input[type = "email"]:focus {
+    outline: none;
+  }
+  
+  input[type = "submit"] {
+    width: 21%;
+    height: 48px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    background: linear-gradient(135deg, #7C7C7C 0%, #2B2828 100%);
+    box-shadow: 0px 15px 20px rgba(66, 58, 58, 0.15);
+    border-radius: 3px;
+    border: none;
+  }
+  
+  input[type = "submit"]:hover {
+    cursor: pointer;
+  }
+  
+  #desktop-image {
+    display: none;
+  }
+  
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    body {
+      display: flex;
+    }
+    
+    h2 {
+      font-size: 64px;
+    }
+    
+    h2:nth-of-type(1) {
+      margin: 0;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+    
+    form {
+      margin-top: 40px;
+      margin-bottom: 132px;
+      justify-content: left;
+    }
+    
+    #all-container {
+      width: 100%;
+    }
+    
+    #text-container {
+      text-align: left;  
+    }
+    
+    #logo {
+      margin: 49px 32px 107px;
+    }
+    
+    #athlete-mobile {
+      display: none;
+    }
+    
+    #desktop-image {
+      display: block;
+      width: 45%;
+      background: url('https://assets.codepen.io/6060109/shoes.png') no-repeat center;
+      background-size: cover;
+    }
+    
+    input[type = "email"] {
+      width: 77.5%;
+      height: 50px;
+    }
+    
+    input[type = "submit"] {
+      width: 22.5%;
+      height: 50px;
+    }
+  }
